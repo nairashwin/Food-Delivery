@@ -59,19 +59,22 @@
 }
 
 #clients img {
-    /* margin: 5px; */
     padding: 10px;
     height: 120px;
 }
 
 /* Contact section  */
-
+#contact-box input{
+    width: 93%;
+}
 #contact-box form {
     width: 80%;
 }
 
 /* footer  */
-
+.footer-link{
+    margin: 10px 13px;
+}
 /* Utility classes  */
 
 .h-primary {

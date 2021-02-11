@@ -26,6 +26,7 @@ html {
     align-items: center;
     top: 0px;
     position: sticky;
+    z-index: 2;
 }
 
 #navbar::before {
@@ -38,11 +39,6 @@ html {
     width: 100%;
     z-index: -1;
     opacity: 0.6;
-}
-
-#navbar ul li a {
-    padding: 0px 7px;
-    margin: 0px 5px;
 }
 
 /*Navigation Bar: Logo and image  */
@@ -69,7 +65,8 @@ html {
 }
 
 #navbar ul li a {
-    padding: 5px 7px;
+    padding: 0px 7px;
+    margin: 0px 5px;
     text-decoration: none;
     border-radius: 10px;
     color: white;
@@ -209,17 +206,46 @@ html {
 }
 
 #contact-box input, #contact-box textarea {
-    width: 91%;
+    width: 96%;
     padding: 10px;
     border-radius: 10px;
     font-size: 1.1rem;
 }
+
+.form-btn {
+    width: 100%;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 2px solid black;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    padding: 15px;
+    cursor: pointer;
+}
+.form-btn:hover{
+    background-color: white;
+    color: black;
+}
+
+/* Footer section  */
 
 footer {
     background: black;
     color: white;
     padding: 9px 20px;
     font-family: 'Baloo Bhai 2', cursive;
+    text-align: center;
+}
+
+.footer-link {
+    margin: 10px 40px;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-family: 'Baloo Bhai 2', cursive;
+    color: white;
+    border-radius: 10px;
+    font-size: 22px;
 }
 
 /* Utility classes  */
@@ -243,7 +269,6 @@ footer {
 .btn {
     padding: 6px 20px;
     border: 2px solid white;
-    background-color: rgb(223, 184, 134);
     background-color: transparent;
     margin: 17px;
     margin-top: 112px;
